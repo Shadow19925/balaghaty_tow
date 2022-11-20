@@ -97,7 +97,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       getPopUp(context,JsonAsset.loadin);
                       Future.delayed(const Duration(seconds: 3), () {
                         dismmesDialog(context);
-                        if (!usersOfTheApp.getUserAccess(
+                        if (usersOfTheApp.getUserAccess(
                             _userNamecontroller.text,
                             _passwordController.text)) {
                           getPopUp(context,JsonAsset.success);
